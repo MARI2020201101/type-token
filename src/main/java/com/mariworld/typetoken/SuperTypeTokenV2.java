@@ -16,7 +16,7 @@ public class SuperTypeTokenV2 {
 
         Sup b = new Sup<List<String>>(){};
         //익명클래스로 깔끔하게 구현해버리기 ㅋ
-        
+
         Type type = b.getClass().getGenericSuperclass();
         ParameterizedType ptype = (ParameterizedType) type;
         System.out.println(ptype.getActualTypeArguments()[0]);
