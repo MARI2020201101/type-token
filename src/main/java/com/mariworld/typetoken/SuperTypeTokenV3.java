@@ -17,6 +17,7 @@ public class SuperTypeTokenV3 {
         <T> T get(TypeReference<T> tr){
             return ((Class<T>)tr.type).cast(map.get(tr.type));
         }
+
     }
 
     static class TypeReference<T>{
